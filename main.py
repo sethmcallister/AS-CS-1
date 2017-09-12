@@ -1,6 +1,4 @@
 int0 = int(input("What is your first number."));
 int1 = int(input("What is your second number."));
-int2 = int(input("What is your third number."));
-
-number = (int0 * int1) / int2;
-print("Your first two inputs multiplied together, than devived by the latter equals" + number);
+output = int0 % int1;
+print("The modulo of the two arguments equals " + str(output))
