@@ -1,4 +1,21 @@
-int0 = int(input("What is your first number."));
-int1 = int(input("What is your second number."));
-output = int0 % int1;
-print("The modulo of the two arguments equals " + str(output))
+class Lift(object):
+    height = 10;
+    width = 10;
+    depth = 10;
+
+    def __init__(self, height, width, depth):
+        self.height = height;
+        self.width = width;
+        self.depth = depth;
+
+
+class Fridge(object):
+    height = 5;
+    width = 5;
+    depth = 5;
+
+    def __init__(self, height, width, depth):
+        self.height = height;
+        self.width = width;
+        self.depth = depth;
+
