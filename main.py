@@ -1,21 +1,26 @@
-class Lift(object):
-    height = 10;
-    width = 10;
-    depth = 10;
+class Box():
+#private class variables
+    _height = 0
+    _width = 0
+    _depth = 0
 
     def __init__(self, height, width, depth):
-        self.height = height;
-        self.width = width;
-        self.depth = depth;
+        #initialiser
+        self._height = height
+        self._width = width
+        self._depth = depth
+    def getVolume(self):
+        #accessor to get volume
+        return self._height*self._width*self._depth
 
 
-class Fridge(object):
-    height = 5;
-    width = 5;
-    depth = 5;
+#create an instants of box for lift
+lift = Box(10,10,10)
+        
+#create an instants of box for fridge
+fridge = Box (5,5,5)
 
-    def __init__(self, height, width, depth):
-        self.height = height;
-        self.width = width;
-        self.depth = depth;
+print("volume of lift: {} cm^3".format(lift.getVolume()))
+
+print("volume of frige: {} cm^3".format(fridge.getVolume()))
 
